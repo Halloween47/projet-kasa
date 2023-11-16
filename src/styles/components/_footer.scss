@@ -1,0 +1,18 @@
+.footer {
+    background-color: #000;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px !important;
+
+    position: block !important;
+
+    img {
+        color: #fff;
+    }
+    .copyright {
+        color: #fff;
+    }
+}
