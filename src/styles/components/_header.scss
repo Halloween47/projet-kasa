@@ -1,0 +1,22 @@
+.header {
+    // background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    margin:  40px 80px;
+
+    nav {
+        // background-color: yellow;
+        width: 20%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .custom-link {
+            text-decoration: none;
+            color: $primary-color;
+        }
+        .custom-link:hover {
+            text-decoration: underline;
+        }
+    }
+}
