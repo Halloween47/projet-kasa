@@ -1,21 +1,5 @@
 {
   "semi": false,
   "singleQuote": true,
-  "jsxSingleQuote": true,
-  "tabWidth": 2,
-  "useTabs": false,
-  "printWidth": 80,
-  "endOfLine": "auto",
-  "jsxBracketSameLine": false,
-  "arrowParens": "avoid",
-  "trailingComma": "es5",
-  "bracketSpacing": true,
-  "overrides": [
-    {
-      "files": ["*.json", "*.json5", "*.jsonc", "*.jsx"],
-      "options": {
-        "printWidth": 200
-      }
-    }
-  ]
+  "tabWidth": 2
 }

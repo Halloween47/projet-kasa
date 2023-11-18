@@ -5,7 +5,28 @@ body {
   line-height: 34px;
   letter-spacing: 0em;
   text-align: right;
-  color: #FF6060;
+  color: #ff6060;
+}
+
+.about {
+  position: relative;
+}
+.about .aboutBanner {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 80%;
+  height: 30vh;
+  margin: auto;
+  border-radius: 20px;
+  position: relative;
+}
+.about .aboutBanner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  position: absolute;
+  left: 0;
+  z-index: -1;
 }
 
 .header {
@@ -21,7 +42,7 @@ body {
 }
 .header nav .custom-link {
   text-decoration: none;
-  color: #FF6060;
+  color: #ff6060;
 }
 .header nav .custom-link:hover {
   text-decoration: underline;
@@ -61,7 +82,7 @@ body {
 }
 
 .card-group {
-  background-color: #F6F6F6 !important;
+  background-color: #f6f6f6 !important;
   width: auto;
   height: auto !important;
   border-radius: 10px;
@@ -73,7 +94,7 @@ body {
 }
 
 .card {
-  background-color: #FF6060;
+  background-color: #ff6060;
   width: 340px;
   height: 340px;
   margin: 10px;
@@ -90,6 +111,41 @@ body {
   letter-spacing: 0em;
   text-align: left;
   margin-left: 10px;
+}
+
+.collapse {
+  width: 70%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+.collapse .collapseTitle {
+  text-align: left;
+  background-color: #ff6060;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.collapse .collapseTitle p {
+  margin: 0;
+  padding: 10px;
+}
+.collapse .collapseTitle img {
+  padding: 10px;
+}
+.collapse .collapseText {
+  text-align: left;
+  background-color: #f6f6f6;
+  padding: 20px;
+}
+.collapse .collapseText p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */

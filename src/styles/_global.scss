@@ -1,12 +1,13 @@
-$primary-color: #FF6060;
+$primary-color: #ff6060;
+$grey: #f6f6f6;
 
 body {
-    // background-color: red;
-    font-family: 'Montserrat', sans-serif;
-font-size: 24px;
-font-weight: 500;
-line-height: 34px;
-letter-spacing: 0em;
-text-align: right;
-color: $primary-color;
-}  
+  // background-color: red;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: $primary-color;
+}

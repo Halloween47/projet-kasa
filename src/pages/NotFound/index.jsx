@@ -1,5 +1,3 @@
 export default function Notfound() {
-    return(
-        <h1>Page non disponible</h1>
-    )
+  return <h1>Page non disponible</h1>
 }

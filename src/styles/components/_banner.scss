@@ -1,16 +1,17 @@
 .banner {
-    background-color: orange;
-    // background-image: url('../../assets/banner.png');
-    width: auto; height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-border-radius: 25px;
-margin:  40px 80px;
+  background-color: orange;
+  // background-image: url('../../assets/banner.png');
+  width: auto;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  margin: 40px 80px;
 
-
-    h1 {
-color: #fff;   
-margin: inherit; padding: inherit;
- }
+  h1 {
+    color: #fff;
+    margin: inherit;
+    padding: inherit;
+  }
 }
