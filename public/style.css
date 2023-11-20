@@ -29,6 +29,29 @@ body {
   z-index: -1;
 }
 
+.pageError {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 50px 0px;
+}
+.pageError .codeError {
+  font-size: 240px;
+  padding: 100px 0px;
+}
+.pageError p {
+  margin: 20px;
+  padding: 30px 0px;
+}
+.pageError .link {
+  margin: 10px;
+  color: #ff6060;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
