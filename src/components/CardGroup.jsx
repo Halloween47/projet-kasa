@@ -5,7 +5,9 @@ function CardGroup() {
   return (
     <div className="card-group">
       {datas.map((data, index) => {
-        return <Card key={index} title={data.title} text={data.text} />
+        return (
+          <Card key={index} title={data.title} text={data.text} id={data.id} />
+        )
       })}
     </div>
   )

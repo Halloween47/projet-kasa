@@ -1,17 +1,18 @@
 .pageError {
-    // background-color: green !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: space-around;
-    align-items: center;
+  // background-color: green !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
 
-    width: 100%;height: auto;
-    padding: 50px 0px;
-    
-    .codeError {
-      font-size: 240px;
-      padding: 100px 0px;
+  width: 100%;
+  height: auto;
+  padding: 50px 0px;
+
+  .codeError {
+    font-size: 240px;
+    padding: 100px 0px;
   }
 
   p {
@@ -21,7 +22,6 @@
 
   .link {
     margin: 10px;
-color: $primary-color;
+    color: $primary-color;
   }
-  
 }

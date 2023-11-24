@@ -11,7 +11,9 @@ function Notfound() {
       <div className="pageError">
         <div className="codeError">404</div>
         <p>Oups! La page que vous demandez n'existe pas.</p>
-        <Link to="/" className='link'>Retourner sur la page d’accueil</Link>
+        <Link to="/" className="link">
+          Retourner sur la page d’accueil
+        </Link>
       </div>
 
       <Footer />
