@@ -1,7 +1,7 @@
 .carousel {
   background-color: blue;
   width: 90%;
-  height: 50vh;
+  height: 400px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -13,7 +13,7 @@
   .carouselLeft {
     background-color: orange;
     width: 10%;
-    height: 100px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +54,7 @@
   .carouselRight {
     background-color: violet;
     width: 10%;
-    height: 100px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;

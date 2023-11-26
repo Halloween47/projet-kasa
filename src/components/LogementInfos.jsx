@@ -1,8 +1,11 @@
 import { useParams } from 'react-router-dom'
 import Collapse from './Collapse'
 import Tags from './Tags'
-import Rating from '@mui/material/Rating';
+import Rating from '@mui/material/Rating'
 import datas from '../datas/datas.json'
+import StarActive from '../assets/star_active.svg'
+import StarRating from './Rating'
+import Ratingg from './Rating'
 
 function LogementInfos({ idLogement, titre, logement, name, photo }) {
   const idEnCours = useParams()
@@ -13,7 +16,15 @@ function LogementInfos({ idLogement, titre, logement, name, photo }) {
   )
   const tagsDuLogementEnCours = datasDuLogementEnCours.tags
   const rateDuLogementEnCours = datasDuLogementEnCours.rating
+  const descriptionDuLogementEnCours = datasDuLogementEnCours.description
+  const equipmentsDuLogementEnCours = datasDuLogementEnCours.equipments
+console.log(equipmentsDuLogementEnCours);
 
+
+  const equipementForme = equipmentsDuLogementEnCours.map((equipement, index) => (
+<li>{equipement}</li>
+  ))
+console.log(equipementForme);
 
   return (
     <div className="infosLogement">
@@ -35,20 +46,19 @@ function LogementInfos({ idLogement, titre, logement, name, photo }) {
             </div>
           </div>
           <div className="zoneStars">
-          <Rating name="size-medium" defaultValue={rateDuLogementEnCours} />
+            <Ratingg rate={rateDuLogementEnCours} />
+            {/* <img src={StarActive} alt="Description alternative" /> */}
           </div>
         </div>
       </div>
       <div className="zone-2">
         <Collapse
           title="Disponibilité"
-          text="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont
- régulièrement vérifiées par nos équipes."
+          text={ descriptionDuLogementEnCours }
         />
         <Collapse
           title="Equipement"
-          text="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont
- régulièrement vérifiées par nos équipes."
+          text={ equipementForme }
         />
       </div>
     </div>

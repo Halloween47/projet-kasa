@@ -11,6 +11,7 @@ export default function About() {
       <div className="aboutBanner">
         <img src={bannerImg} alt="image banniere" />
       </div>
+      <div className="zoneCollapse">
       <Collapse
         title="Fiabilité"
         text="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont
@@ -33,6 +34,8 @@ export default function About() {
         locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons
         également des ateliers sur la sécurité domestique pour nos hôtes."
       />
+      </div>
+     
       <Footer />
     </div>
   )

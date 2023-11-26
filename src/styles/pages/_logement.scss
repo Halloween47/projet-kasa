@@ -1,7 +1,7 @@
 .infosLogement {
-//   background-color: #000;
+  //   background-color: #000;
   width: 100%;
-  height: 80vh;
+  // height: 80vh;
 
   .zone-1 {
     // background-color: orange;
@@ -9,9 +9,9 @@
     height: auto;
     display: flex;
     justify-content: space-between;
-  
+
     .zoneUnGauche {
-    //   background-color: red;
+      //   background-color: red;
       width: auto;
       height: auto;
       text-align: left;
@@ -19,51 +19,71 @@
       .titre {
         // background-color: violet;
       }
+
       .zoneTags {
         // background-color: green;
-        width: auto; height: 200px;
+        width: auto;
+        height: 200px;
 
         .tag {
-            // background-color: red;
-            width: auto; height: 100px;
+          // background-color: red;
+          width: auto;
+          height: 100px;
         }
       }
     }
     .zoneUnDroite {
-        // background-color: blue;
-        width: 20%; height: auto;
-        margin-right: 0;
+      // background-color: blue;
+      width: 15%;
+      height: auto;
+      margin-right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
-        .profil {
-          background-color: orange;
-            display: flex; 
-            // width: 100%;
-            height: auto;
-            display: flex;
-            justify-content: space-around;
+      .profil {
+        // background-color: orange;
+        display: flex;
+        width: auto;
+        height: auto;
+        display: flex !important;
+        justify-content: space-around;
+        align-items: center;
 
-            .name {
-              background-color: violet;
-              width: 9vw;
-              text-align: right;
-            }
-
-            .photo {
-              width: 9vw;
-                img {
-                    border-radius: 60%;
-                    width: 60%;
-                }
-            }
+        .name {
+          // background-color: violet;
+          width: auto;
+          height: 100%;
+          text-align: right;
+          padding-right: 10px;
+          font-size: 1.2rem;
         }
+
+        .photo {
+          // background-color: red;
+          width: auto;
+          display: flex;
+          img {
+            border-radius: 60%;
+            width: 100%;
+          }
+        }
+      }
+      .zoneStars {
+        margin: 20px 0px;
+
+        .stars {
+          margin: 20px;
+        }
+      }
     }
   }
   .zone-2 {
     // background-color: blue;
-    width: auto;height: auto;
+    width: auto;
+    height: auto;
     display: flex;
     padding: 0px;
+    font-size: 1.2rem;
   }
-  
 }
-

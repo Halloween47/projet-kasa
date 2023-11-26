@@ -1,14 +1,15 @@
 .listeTags {
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 0 !important;
-    
-    li {
-        padding: 0px 20px;
-        margin-right: 10px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0 !important;
+
+  li {
+    padding: 0px 20px;
+    margin-right: 10px;
     list-style: none;
     background-color: $primary-color;
     color: #fff;
     border-radius: 50px;
-}
+    font-size: 1rem;
+  }
 }
