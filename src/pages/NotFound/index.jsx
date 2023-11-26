@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Link } from 'react-router-dom'
 
 import Header from '../../components/Header'
@@ -22,3 +23,10 @@ function Notfound() {
 }
 
 export default Notfound
+=======
+export default function Notfound() {
+    return(
+        <h1>Page non disponible</h1>
+    )
+}
+>>>>>>> 46b668e417d3992850781c4e928e945dc3a7ab78

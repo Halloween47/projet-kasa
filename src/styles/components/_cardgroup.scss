@@ -1,4 +1,5 @@
 .card-group {
+<<<<<<< HEAD
   background-color: #f6f6f6 !important;
   width: auto;
   height: auto !important;
@@ -17,3 +18,16 @@
   padding: 10px 80px !important;
   }
 }
+=======
+    background-color: #F6F6F6 !important;
+    width: auto; 
+    height: auto !important;
+    border-radius: 10px;
+    margin:  40px 80px;
+    padding:  40px 80px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+>>>>>>> 46b668e417d3992850781c4e928e945dc3a7ab78

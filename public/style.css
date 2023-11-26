@@ -5,6 +5,7 @@ body {
   line-height: 34px;
   letter-spacing: 0em;
   text-align: right;
+<<<<<<< HEAD
   color: #ff6060;
   margin: 0;
 }
@@ -198,6 +199,11 @@ body {
     align-items: center;
   }
 }
+=======
+  color: #FF6060;
+}
+
+>>>>>>> 46b668e417d3992850781c4e928e945dc3a7ab78
 .header {
   display: flex;
   justify-content: space-between;
@@ -211,12 +217,17 @@ body {
 }
 .header nav .custom-link {
   text-decoration: none;
+<<<<<<< HEAD
   color: #ff6060;
+=======
+  color: #FF6060;
+>>>>>>> 46b668e417d3992850781c4e928e945dc3a7ab78
 }
 .header nav .custom-link:hover {
   text-decoration: underline;
 }
 
+<<<<<<< HEAD
 @media (max-width: 376px) {
   .header {
     margin: 0 !important;
@@ -230,6 +241,8 @@ body {
     font-size: 1rem;
   }
 }
+=======
+>>>>>>> 46b668e417d3992850781c4e928e945dc3a7ab78
 .footer {
   background-color: #000;
   width: 100%;
@@ -247,6 +260,7 @@ body {
   color: #fff;
 }
 
+<<<<<<< HEAD
 @media (max-width: 376px) {
   .footer {
     height: auto !important;
@@ -257,11 +271,16 @@ body {
 }
 .banner {
   background-color: rgba(0, 0, 0, 0.5) !important;
+=======
+.banner {
+  background-color: orange;
+>>>>>>> 46b668e417d3992850781c4e928e945dc3a7ab78
   width: auto;
   height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   border-radius: 15px !important;
   margin: 40px 80px;
   position: relative;
@@ -275,11 +294,16 @@ body {
   position: absolute;
   left: 0;
   z-index: -1;
+=======
+  border-radius: 25px;
+  margin: 40px 80px;
+>>>>>>> 46b668e417d3992850781c4e928e945dc3a7ab78
 }
 .banner h1 {
   color: #fff;
   margin: inherit;
   padding: inherit;
+<<<<<<< HEAD
   position: absolute;
   z-index: 2;
   line-height: 20px;
@@ -300,6 +324,12 @@ body {
 }
 .card-group {
   background-color: #f6f6f6 !important;
+=======
+}
+
+.card-group {
+  background-color: #F6F6F6 !important;
+>>>>>>> 46b668e417d3992850781c4e928e945dc3a7ab78
   width: auto;
   height: auto !important;
   border-radius: 10px;
@@ -310,6 +340,7 @@ body {
   justify-content: space-around;
 }
 
+<<<<<<< HEAD
 @media (max-width: 376px) {
   .card-group {
     margin: 10px 80px !important;
@@ -318,6 +349,10 @@ body {
 }
 .card {
   background-color: #ff6060;
+=======
+.card {
+  background-color: #FF6060;
+>>>>>>> 46b668e417d3992850781c4e928e945dc3a7ab78
   width: 340px;
   height: 340px;
   margin: 10px;
@@ -336,6 +371,7 @@ body {
   margin-left: 10px;
 }
 
+<<<<<<< HEAD
 .collapse {
   width: 70%;
   height: auto;
@@ -563,4 +599,6 @@ body {
   }
 }
 
+=======
+>>>>>>> 46b668e417d3992850781c4e928e945dc3a7ab78
 /*# sourceMappingURL=style.css.map */
