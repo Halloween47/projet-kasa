@@ -1,5 +1,4 @@
 import Header from '../../components/Header'
-<<<<<<< HEAD
 import Footer from '../../components/Footer'
 import Collapse from '../../components/Collapse'
 
@@ -41,15 +40,3 @@ export default function About() {
     </div>
   )
 }
-=======
-
-
-export default function About() {
-    return(
-        <div>
-<h1>Page ABOUT</h1>    
-<Header />
-</div>
-)
-}
->>>>>>> 46b668e417d3992850781c4e928e945dc3a7ab78

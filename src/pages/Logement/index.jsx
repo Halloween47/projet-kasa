@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react';
 import { useParams, Navigate } from 'react-router-dom'
 import datas from '../../datas/datas.json'
@@ -26,18 +25,3 @@ function Logement() {
 }
 
 export default Logement
-=======
-import { Link } from 'react-router-dom'
- 
-function Logement() {
-    return (
-        <nav>
-            <Link to="/">Accueil</Link>
-            <Link to="/logement">Logement</Link>
-            <Link to="/about">About</Link>
-        </nav>
-    )
-}
-
-export default Logement
->>>>>>> 46b668e417d3992850781c4e928e945dc3a7ab78

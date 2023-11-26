@@ -1,5 +1,4 @@
 .header {
-<<<<<<< HEAD
   display: flex;
   justify-content: space-between;
   margin: 40px 80px;
@@ -37,26 +36,3 @@
   }
 
 }
-=======
-    // background-color: blue;
-    display: flex;
-    justify-content: space-between;
-    margin:  40px 80px;
-
-    nav {
-        // background-color: yellow;
-        width: 20%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-
-        .custom-link {
-            text-decoration: none;
-            color: $primary-color;
-        }
-        .custom-link:hover {
-            text-decoration: underline;
-        }
-    }
-}
->>>>>>> 46b668e417d3992850781c4e928e945dc3a7ab78
