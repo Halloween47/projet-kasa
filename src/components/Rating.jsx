@@ -10,12 +10,12 @@ function Rating({rate}) {
     <div className="zoneStars">
       {
         starsFull.map((star, index) => {
-          return (<img key={index} alt='starFull' src={StarActive}></img>)
+          return (<img key={index} alt='starFull' src={StarActive} className='stars'></img>)
         })
       }
       {
         starsEmpty.map((star, index) => {
-          return (<img key={index} alt='starEmpty' src={StarGrey}></img>)
+          return (<img key={index} alt='starEmpty' src={StarGrey} className='stars'></img>)
           })
       }
     </div>

@@ -10,3 +10,10 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+@media (max-width: 376px) {
+  .card-group {
+  margin: 10px 80px !important;
+  padding: 10px 80px !important;
+  }
+}

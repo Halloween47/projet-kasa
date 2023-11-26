@@ -59,6 +59,32 @@ body {
   color: #ff6060;
 }
 
+@media (max-width: 376px) {
+  .pageError {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+  }
+  .pageError .codeError {
+    font-size: 124px;
+    padding: 100px 0px;
+  }
+  .pageError p {
+    margin: 20px;
+    padding: 30px 0px;
+    text-align: center;
+  }
+  .pageError .link {
+    margin: 10px;
+    color: #ff6060;
+    text-align: center;
+  }
+}
 .infosLogement {
   width: 100%;
 }
@@ -116,7 +142,7 @@ body {
   margin: 20px 0px;
 }
 .infosLogement .zone-1 .zoneUnDroite .zoneStars .stars {
-  margin: 20px;
+  margin: 2px !important;
 }
 .infosLogement .zone-2 {
   width: auto;
@@ -126,6 +152,52 @@ body {
   font-size: 1.2rem;
 }
 
+@media (max-width: 376px) {
+  .infosLogement .zone-1 .zoneUnDroite {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    justify-content: space-between;
+  }
+  .infosLogement .zone-1 .zoneUnDroite .profil {
+    display: flex;
+    width: 50%;
+    height: 100px;
+    display: flex !important;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .infosLogement .zone-1 .zoneUnDroite .profil .name {
+    width: auto;
+    height: 50px !important;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 1rem;
+    line-height: 20px;
+  }
+  .infosLogement .zone-1 .zoneUnDroite .profil .photo {
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .infosLogement .zone-1 .zoneUnDroite .profil .photo img {
+    border-radius: 60%;
+    width: 93%;
+  }
+  .infosLogement .zone-1 .zoneUnDroite .zoneStars {
+    margin: 20px 0px;
+  }
+  .infosLogement .zone-1 .zoneUnDroite .zoneStars .stars {
+    margin: 20px;
+  }
+  .infosLogement .zone-2 {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -145,6 +217,19 @@ body {
   text-decoration: underline;
 }
 
+@media (max-width: 376px) {
+  .header {
+    margin: 0 !important;
+    padding: 15px;
+  }
+  .header img {
+    width: 35% !important;
+  }
+  .header nav {
+    width: 50% !important;
+    font-size: 1rem;
+  }
+}
 .footer {
   background-color: #000;
   width: 100%;
@@ -162,22 +247,57 @@ body {
   color: #fff;
 }
 
+@media (max-width: 376px) {
+  .footer {
+    height: auto !important;
+  }
+  .footer .copyright {
+    text-align: center;
+  }
+}
 .banner {
-  background-color: orange;
+  background-color: rgba(0, 0, 0, 0.5) !important;
   width: auto;
   height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 25px;
+  border-radius: 15px !important;
   margin: 40px 80px;
+  position: relative;
+  background-color: #fff;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  position: absolute;
+  left: 0;
+  z-index: -1;
 }
 .banner h1 {
   color: #fff;
   margin: inherit;
   padding: inherit;
+  position: absolute;
+  z-index: 2;
+  line-height: 20px;
+  font-weight: 500;
 }
 
+@media (max-width: 376px) {
+  .banner {
+    width: 90% !important;
+    margin: 10px auto !important;
+  }
+  .banner h1 {
+    width: 52%;
+    font-size: 1.2rem !important;
+    text-align: left;
+    left: 10px;
+  }
+}
 .card-group {
   background-color: #f6f6f6 !important;
   width: auto;
@@ -190,6 +310,12 @@ body {
   justify-content: space-around;
 }
 
+@media (max-width: 376px) {
+  .card-group {
+    margin: 10px 80px !important;
+    padding: 10px 80px !important;
+  }
+}
 .card {
   background-color: #ff6060;
   width: 340px;
@@ -326,6 +452,48 @@ body {
   z-index: 2;
 }
 
+@media (max-width: 376px) {
+  .carouselLeft {
+    background-color: orange;
+    width: 15%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .carouselLeft img {
+    width: 50px !important;
+    height: auto !important;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  .carouselRight {
+    background-color: violet;
+    width: 15%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .carouselRight img {
+    width: 50px !important;
+    height: auto !important;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+}
 .listeTags {
   display: flex;
   justify-content: flex-start;
@@ -341,6 +509,25 @@ body {
   font-size: 1rem;
 }
 
+@media (max-width: 376px) {
+  .listeTags {
+    width: 100% !important;
+    height: auto !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 0 !important;
+  }
+  .listeTags li {
+    padding: 0px 10px;
+    margin: 10px;
+    list-style: none;
+    background-color: #ff6060;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 1rem;
+  }
+}
 .infosLogement {
   width: 90%;
   margin: 20px;
@@ -353,6 +540,27 @@ body {
 .infosLogement .zone-1 .zoneUnGauche .localisation {
   margin: 0;
   padding-top: 20px;
+}
+
+@media (max-width: 376px) {
+  .infosLogement {
+    width: 90%;
+    margin: 20px;
+  }
+  .infosLogement .zone-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .infosLogement .zone-1 .zoneUnGauche .titre {
+    font-size: 1.5rem !important;
+    font-weight: 500;
+    margin: 0;
+  }
+  .infosLogement .zone-1 .zoneUnGauche .localisation {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

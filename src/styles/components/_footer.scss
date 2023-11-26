@@ -16,3 +16,13 @@
     color: #fff;
   }
 }
+
+@media (max-width: 376px) { 
+  .footer {
+    height: auto !important;
+
+    .copyright {
+      text-align: center;
+    }
+  }
+}

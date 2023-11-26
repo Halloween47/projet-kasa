@@ -1,10 +1,7 @@
 import { useParams } from 'react-router-dom'
 import Collapse from './Collapse'
 import Tags from './Tags'
-import Rating from '@mui/material/Rating'
 import datas from '../datas/datas.json'
-import StarActive from '../assets/star_active.svg'
-import StarRating from './Rating'
 import Ratingg from './Rating'
 
 function LogementInfos({ idLogement, titre, logement, name, photo }) {
@@ -18,13 +15,11 @@ function LogementInfos({ idLogement, titre, logement, name, photo }) {
   const rateDuLogementEnCours = datasDuLogementEnCours.rating
   const descriptionDuLogementEnCours = datasDuLogementEnCours.description
   const equipmentsDuLogementEnCours = datasDuLogementEnCours.equipments
-console.log(equipmentsDuLogementEnCours);
 
 
   const equipementForme = equipmentsDuLogementEnCours.map((equipement, index) => (
 <li>{equipement}</li>
   ))
-console.log(equipementForme);
 
   return (
     <div className="infosLogement">
@@ -41,7 +36,6 @@ console.log(equipementForme);
               <img
                 src={datasDuLogementEnCours.host.picture}
                 alt="photo hôte"
-                srcset=""
               />
             </div>
           </div>

@@ -1,13 +1,10 @@
 import { useParams } from 'react-router-dom'
 import { useState } from 'react'
 
-import imgLogement from '../assets/bannerImg.png'
 import arrowLeft from '../assets/arrow_left.svg'
 import arrowRight from '../assets/arrow_right.svg'
 
 import datas from '../datas/datas.json'
-import LogementInfos from './LogementInfos'
-import { logDOM } from '@testing-library/react'
 
 function Carousel() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
@@ -15,7 +12,7 @@ function Carousel() {
   const idDuLogementEnCours = idEnCours.idLogement
 
   const datasDuLogementEnCours = datas.find(
-    (datasLogement) => datasLogement.id === idDuLogementEnCours,
+    (datasLogement) => datasLogement.id === idDuLogementEnCours
   )
   const datasPictures = datasDuLogementEnCours.pictures
   const totalImages = datasPictures.length
