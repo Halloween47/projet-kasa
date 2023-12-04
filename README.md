@@ -1,72 +1,50 @@
-test
 
-# Getting Started with Create React App
+# Organisation du workflow du Projet Kasa
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Description de l'organisation du travail à la réalisation du projet.
 
-## Available Scripts
+# Organisation de travail
 
-In the project directory, you can run:
+Ce projet suit une méthodologie de développement basée sur des branches pour faciliter la gestion des étapes du processus de développement. Voici comment le projet est structuré :
 
-### `npm start`
+## Branches principales
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `main` (ou `master`)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+La branche `main` (ou `master`) est la branche principale du projet. Elle représente la version stable et déployable du code. Tout développement qui est prêt à être publié est fusionné dans cette branche.
 
-### `npm test`
+### `develop`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+La branche `develop` est la branche de développement principale. C'est à partir de cette branche que toutes les fonctionnalités et correctifs sont dérivés. Elle sert de point de départ pour les nouvelles fonctionnalités et représente la version en cours de développement.
 
-### `npm run build`
+## Branches d'étape
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Pour faciliter le développement itératif, chaque nouvelle fonctionnalité ou amélioration majeure est développée dans une branche distincte. Ces branches sont nommées en fonction de l'étape ou de la fonctionnalité en cours de développement.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Exemple : `etape-1`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+La branche `etape-1` est créée à partir de la branche `develop`. Toutes les modifications liées à la première étape du développement sont effectuées dans cette branche. Une fois que l'étape est terminée et testée, elle est fusionnée dans la branche `develop`.
 
-### `npm run eject`
+### Exemple : `etape-2`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+De même, la branche `etape-2` est créée à partir de la branche `develop` pour la deuxième étape du développement. Ce processus est répété jusqu'à ce que toutes les étapes soient complètes.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Pourquoi cette façon de faire ?
+### 1. Développement itératif
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Le développement itératif me permet de travailler sur des fonctionnalités par étapes plutôt que de manière monolithique. Chaque branche "étape" représente une unité de développement cohérente et testable. Cela facilite le suivi des progrès, l'identification rapide des problèmes et l'ajustement continu.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 2. Isolation des fonctionnalités
 
-## Learn More
+Les branches "étape" me permettent d'isoler le développement de chaque fonctionnalité majeure. Cela évite les conflits de fusion massifs en découpant le travail en petites parties gérables. Chaque branche "étape" peut être développée indépendamment, ce qui facilite la collaboration entre les membres de l'équipe.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 3. Facilitation des tests et de la validation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+En travaillant par étapes, je peux effectuer des tests approfondis à chaque itération. Cela garantit que chaque nouvelle fonctionnalité est robuste et fonctionnelle avant d'être intégrée dans la branche principale de développement (`develop`). Les problèmes peuvent être détectés et résolus plus tôt dans le processus de développement.
 
-### Code Splitting
+### 4. Gestion des retours en temps réel
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+La structure par branches "étape" favorise une approche agile du développement, permettant d'intégrer rapidement les retours des membres de l'équipe ou de la communauté. Les itérations fréquentes facilitent l'ajustement continu en fonction des besoins changeants et des commentaires reçus.
 
-### Analyzing the Bundle Size
+En adoptant cette approche, je vise à rendre mon processus de développement plus flexible,
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
