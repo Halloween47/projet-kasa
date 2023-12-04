@@ -13,26 +13,21 @@
       text-decoration: none;
       color: $primary-color;
     }
-    .custom-link:hover {
+    // .custom-link:hover {
+    //   text-decoration: underline;
+    // }
+    // .custom-link:active {
+    //   text-decoration: underline !important;
+    // }
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+    .active {
+      // background-color: orange;
       text-decoration: underline;
     }
   }
 }
 
-@media (max-width: 376px) {
-  
-  .header {
-    margin: 0 !important;
-    padding: 15px;
-    img {
-      // background-color: blue;
-      width: 35% !important;
-    }
-    nav {
-      // background-color: yellow;
-      width: 50% !important;
-      font-size: 1rem;
-    }
-  }
 
-}

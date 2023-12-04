@@ -22,7 +22,6 @@ function Carousel() {
   }))
 
   function clicSurFlecheDroite() {
-    console.log('clic sur droite')
     if (currentImageIndex < totalImages - 1) {
       setCurrentImageIndex(currentImageIndex + 1)
     } else {
@@ -30,7 +29,6 @@ function Carousel() {
     }
   }
   function clicSurFlecheGauche() {
-    console.log('clic sur gauche')
     if (currentImageIndex > 0) {
       setCurrentImageIndex(currentImageIndex - 1)
     } else {

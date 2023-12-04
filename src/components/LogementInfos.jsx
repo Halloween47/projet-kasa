@@ -16,10 +16,9 @@ function LogementInfos({ idLogement, titre, logement, name, photo }) {
   const descriptionDuLogementEnCours = datasDuLogementEnCours.description
   const equipmentsDuLogementEnCours = datasDuLogementEnCours.equipments
 
-
-  const equipementForme = equipmentsDuLogementEnCours.map((equipement, index) => (
-<li>{equipement}</li>
-  ))
+  const equipementForme = equipmentsDuLogementEnCours.map(
+    (equipement, index) => <li>{equipement}</li>
+  )
 
   return (
     <div className="infosLogement">
@@ -33,10 +32,7 @@ function LogementInfos({ idLogement, titre, logement, name, photo }) {
           <div className="profil">
             <div className="name">{datasDuLogementEnCours.host.name}</div>
             <div className="photo">
-              <img
-                src={datasDuLogementEnCours.host.picture}
-                alt="photo hôte"
-              />
+              <img src={datasDuLogementEnCours.host.picture} alt="photo hôte" />
             </div>
           </div>
           <div className="zoneStars">
@@ -46,14 +42,8 @@ function LogementInfos({ idLogement, titre, logement, name, photo }) {
         </div>
       </div>
       <div className="zone-2">
-        <Collapse
-          title="Disponibilité"
-          text={ descriptionDuLogementEnCours }
-        />
-        <Collapse
-          title="Equipement"
-          text={ equipementForme }
-        />
+        <Collapse title="Disponibilité" text={descriptionDuLogementEnCours} />
+        <Collapse title="Equipement" text={equipementForme} />
       </div>
     </div>
   )

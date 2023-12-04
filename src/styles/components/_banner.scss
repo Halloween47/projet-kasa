@@ -30,20 +30,3 @@
     font-weight: 500;
   }
 }
-
-@media (max-width: 376px) {
-  .banner {
-    
-    width: 90% !important;
-    // margin: 0 !important;
-    margin: 10px auto !important;
-
-    h1 {
-      // background-color: red;
-      width: 52%;
-      font-size: 1.2rem !important;
-      text-align: left;
-      left: 10px;
-    }
-  }
-}

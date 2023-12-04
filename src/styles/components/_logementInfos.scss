@@ -16,28 +16,3 @@
     }
   }
 }
-
-@media (max-width: 376px) {
-  .infosLogement {
-    width: 90%;
-    margin: 20px;
-  
-    .zone-1 {
-      display: flex;
-      flex-direction: column;
-      .zoneUnGauche {
-        .titre {
-          font-size: 1.5rem !important;
-          font-weight: 500;
-          margin: 0;
-        }
-        .localisation {
-          margin: 0;
-          padding: 0;
-          font-size: 1rem !important;
-
-        }
-      }
-    }
-  }
-}

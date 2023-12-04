@@ -1,10 +1,11 @@
 import { NavLink } from 'react-router-dom'
 
-function Card({  title, text, id }) {
+function Card({  title, text, id, image }) {
   return (
-    <NavLink  id={id} to={`/Logement/${id}`}>
+    <NavLink  id={id} to={`/logement/${id}`}>
       <div className="card">
-        <h1>{title}</h1>
+        <p>{title}</p>
+        <img src={image} alt="" />
       </div>
     </NavLink>
   )

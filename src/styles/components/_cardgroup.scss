@@ -1,19 +1,24 @@
 .card-group {
-  background-color: #f6f6f6 !important;
-  width: auto;
+  // background-color: #f6f6f6 !important;
+  background-color: #f6f6f6;
+  width: 90%  !important;  
   height: auto !important;
   border-radius: 10px;
+  // margin: 40px 80px !important;
   margin: 40px 80px;
-  padding: 40px 80px;
+  padding: 40px 0px !important;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-}
 
-@media (max-width: 376px) {
-  .card-group {
-  margin: 10px 80px !important;
-  padding: 10px 80px !important;
+  a {
+    width: 33% ;
+    height: auto !important;
+    margin: 10px 0px !important;
+
+    display: flex;
+    justify-content: center;
   }
 }
+
